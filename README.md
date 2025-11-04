@@ -166,3 +166,108 @@
 =======
 >>>>>>> 291574f (更新数据清单)
 
+<!-- DATASETS_TABLE_START -->
+## Datasets (Task + Links)
+
+> 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。
+> 说明：当前已隐藏 **Multi-Task Instruction, Pretraining** 类别（仍保留在 YAML 中）。
+
+| Dataset | Task | Paper | GitHub |
+| --- | --- | --- | --- |
+| PubLayNet | Layout&OCR | — | — |
+| DocBank | Layout&OCR&Formula Recognition | — | — |
+| DocLayNet | Layout&OCR | — | — |
+| OmniDocBench | Layout&OCR | — | — |
+| M6Doc | Layout&OCR | — | — |
+| IBEM | Layout&OCR | — | — |
+| TabLeX | Layout&OCR | — | — |
+| ICDAR 2021 | Layout&OCR | — | — |
+| PRImA | Layout&OCR | — | — |
+| Nougat | Layout&OCR&Table/Formula Recognition | — | — |
+| AceParse | Layout&OCR&Table/Formula Recognition | — | — |
+| TableBank | Table Recognition | — | — |
+| TabRecSet | Table Recognition | — | — |
+| PubTables-1M | Table Recognition | — | — |
+| ChemTable | Table Recognition | — | — |
+| Nougat For Formula | Formula Recognition | — | — |
+| CROHME | Formula Recognition | — | — |
+| HME100K | Formula Recognition | — | — |
+| MathWriting | Formula Recognition | — | — |
+| PEaCE | Chemical Recognition | — | — |
+| DECIMER.ai | Chemical Recognition | — | — |
+| MoIScribe | Chemical Recognition | — | — |
+| ReactionDataExtractor | Chemical Recognition | — | — |
+| S2abEL | Information Extraction | — | — |
+| Wiki-TabNER | Information Extraction | — | — |
+| AxCell | Information Extraction | — | — |
+| Symlink | Information Extraction | — | — |
+| SymDef | Information Extraction | — | — |
+| GENIA | IE | — | — |
+| BC2GM | IE | — | — |
+| NCBI Disease | IE | — | — |
+| CHEMDNER | IE | — | — |
+| BC5CDR | IE | — | — |
+| BioRED | IE | — | — |
+| SCITLDR | Summarization | — | — |
+| WikiHow | Summarization | — | — |
+| PubMed Summarization | Summarization | — | — |
+| FacetSum | Summarization | — | — |
+| CS-PaperSum | Summarization | — | — |
+| Multi-XScience | Summarization | — | — |
+| MS² | Summarization | — | — |
+| BigSurvey | Summarization | — | — |
+| SURVEYSUM | Summarization | — | — |
+| LEGOBench | Summarization | — | — |
+| SciCap+ | Captioning | — | — |
+| MMSci | Captioning | — | — |
+| ArXivCap | Captioning | — | — |
+| ACL-FIG | Classification | — | — |
+| LitSearch | Retrieval | — | — |
+| SciMMIR | Retrieval | — | — |
+| ARQMath | QA | — | — |
+| SciTSR | QA | — | — |
+| PubTabNet | QA | — | — |
+| TableVQA-Bench | QA | — | — |
+| DocVQA | QA | — | — |
+| PlotQA | QA | — | — |
+| ChartQA | QA | — | — |
+| OpenCQA | QA | — | — |
+| SciGraphQA | QA | — | — |
+| CharXiv | QA | — | — |
+| ChartLlama | QA | — | — |
+| SimChart9K | QA | — | — |
+| ReachQA | QA | — | — |
+| ECD | QA | — | — |
+| ChartBench | QA | — | — |
+| ChartX | QA | — | — |
+| MMC | QA | — | — |
+| BioRead | QA | — | — |
+| PubMedQA | QA | — | — |
+| BioMRC | QA | — | — |
+| ScholarlyRead | QA | — | — |
+| ChemLLMBench | QA | — | — |
+| ScholarChemQA | QA | — | — |
+| QASPER | QA | — | — |
+| QASA | QA | — | — |
+| LitQA | QA | — | — |
+| SCIBENCH | QA | — | — |
+| SciEval | QA | — | — |
+| ScholarQABench | QA | — | — |
+| SCIDQA | QA | — | — |
+| SciQAG-24D | QA | — | — |
+| Xiezhi | QA | — | — |
+| SciKnowEval | QA | — | — |
+| PeerQA | QA | — | — |
+| COVID-QA | QA | — | — |
+| BioASQ-TaskB | QA | — | — |
+| SciFIBench | QA | — | — |
+| SCI-CQA | QA | — | — |
+| ArXivQA | QA | — | — |
+| LLM4Mat-Bench | QA | — | — |
+| SPIQA | QA | — | — |
+| SciAssess | QA | — | — |
+| MMMU | QA | — | — |
+| LAB-Bench | QA | — | — |
+| MMCR | QA | — | — |
+<!-- DATASETS_TABLE_END -->
+
