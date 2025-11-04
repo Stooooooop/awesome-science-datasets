@@ -2,32 +2,27 @@
 # -*- coding: utf-8 -*-
 """
 从 datasets.yaml 生成 README 中的精简表格（Dataset | Task | Paper | GitHub）
-- 支持按 Task / 按数据集名称过滤（排除或仅保留）
-- 仅在 README 的标记之间替换内容
+- 支持按 Task / 名称过滤
+- 兼容 Python 3.8+
 """
-
-import re, yaml, pandas as pd
+import re
+import yaml
 from pathlib import Path
-from typing import Iterable
+from typing import Optional, Iterable
 
 MARK_START = "<!-- DATASETS_TABLE_START -->"
 MARK_END   = "<!-- DATASETS_TABLE_END -->"
 
-# ===== 可配置过滤规则 =====
-# 1) 不想在 README 表格展示的 Task（仍在 datasets.yaml 中保留）
-EXCLUDE_TASKS: set[str] = {
+# ===== 过滤规则（可按需修改）=====
+EXCLUDE_TASKS = {
     "Pretraining",
     "Multi-Task Instruction",
 }
+EXCLUDE_DATASETS = set()
+SHOW_ONLY_WITH_LINKS = False   # True=只展示有 paper 或 primary 链接的条目
+# =================================
 
-# 2) 如需按名字排除（可选）
-EXCLUDE_DATASETS: set[str] = set()
-
-# 3) 仅展示“有链接”的条目（paper 或 primary 有一个即可）。不需要就设为 False
-SHOW_ONLY_WITH_LINKS = False
-# =======================
-
-def _link(text: str, url: str | None) -> str:
+def _link(text: str, url: Optional[str]) -> str:
     if url and isinstance(url, str) and url.startswith(("http://", "https://")):
         return f"[{text}]({url})"
     return "—"
@@ -41,19 +36,19 @@ def build_table(items: Iterable[dict]) -> str:
         paper = url.get("paper")
         primary = url.get("primary")
 
-        # 过滤逻辑
-        if task in EXCLUDE_TASKS:               # 按 Task 排除
+        if task in EXCLUDE_TASKS:
             continue
-        if name in EXCLUDE_DATASETS:            # 按名称排除
+        if name in EXCLUDE_DATASETS:
             continue
         if SHOW_ONLY_WITH_LINKS and not (paper or primary):
             continue
 
         rows.append((name or "—", task or "—", _link("paper", paper), _link("github", primary)))
 
-    # 生成 Markdown 表格
-    md = ["| Dataset | Task | Paper | GitHub |",
-          "| --- | --- | --- | --- |"]
+    md = [
+        "| Dataset | Task | Paper | GitHub |",
+        "| --- | --- | --- | --- |",
+    ]
     for ds, task, paper, gh in rows:
         md.append(f"| {ds} | {task} | {paper} | {gh} |")
     return "\n".join(md)
