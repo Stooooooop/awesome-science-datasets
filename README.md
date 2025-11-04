@@ -19,19 +19,15 @@
 - 所有条目的“权威地址（primary）”指向项目官方 GitHub 或主页；若有论文与镜像地址一并给出。
 - 结构化索引见 `datasets.yaml`（或 `datasets.json`），便于二次开发与程序化检索。
 
-<!-- ## Datasets (CSV Viewer)
-参见：[datasets_from_latex.csv](./data/datasets_from_latex.csv)  
-> 点击链接后，GitHub 会以可滚动表格展示 CSV。 -->
-
-
 ## Datasets (Task + Links)
 
-> 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。请在 `datasets.yaml` 的 `url.paper` 与 `url.primary` 补齐官方链接后，表格会自动更新。
+> 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。
 
 | Dataset | Task | Paper | GitHub |
 | --- | --- | --- | --- |
-| …自动生成… |
-
+| WikiHow | summarization | [paper](https://arxiv.org/abs/1810.09305) | [github](https://github.com/mahnazkoupaee/WikiHow-Dataset) |
+| arXiv/PubMed | summarization | [paper](https://aclanthology.org/N18-2097/) | — |
+| SciSummNet | summarization | [paper](https://aclanthology.org/W19-8660/) | [github](https://github.com/WING-NUS/scisumm-corpus) |
 
 
 ## 数据清单（结构化索引）
@@ -51,9 +47,8 @@
 ## 贡献指南
 见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
 
-<!-- DATASETS_TABLE_START -->
-## Datasets (Task + Links)
 
+<<<<<<< HEAD
 > 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。
 
 | Dataset | Task | Paper | GitHub |
@@ -168,4 +163,6 @@
 | HoneyBee | Multi-Task Instruction | — | — |
 | IDL | Multi-Task Instruction | — | — |
 <!-- DATASETS_TABLE_END -->
+=======
+>>>>>>> 291574f (更新数据清单)
 
