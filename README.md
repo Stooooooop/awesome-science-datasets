@@ -10,15 +10,12 @@
 - [目录](#目录)
 - [使用方法](#使用方法)
 - [数据清单（结构化索引）](#数据清单结构化索引)
-- [快速浏览（按类别）](#快速浏览按类别)
-  - [Summarization](#summarization)
 - [贡献指南](#贡献指南)
 - [Datasets (Task + Links)](#datasets-task--links)
 
 ## 使用方法
 - 所有条目的“权威地址（primary）”指向项目官方 GitHub 或主页；若有论文与镜像地址一并给出。
 - 结构化索引见 `datasets.yaml`（或 `datasets.json`），便于二次开发与程序化检索。
-
 
 
 ## 数据清单（结构化索引）
@@ -28,7 +25,7 @@
   <img src="./assets/datasets_tree.svg" width="95%" alt="Mind map of datasets for scientific literature understanding" />
 </p>
 
-
+<!-- 
 ## 快速浏览（按类别）
 >可在 `categories/` 下维护专题页。
 
@@ -37,7 +34,7 @@
 - **arXiv/PubMed** — 长文科学摘要生成；[Paper](https://aclanthology.org/N18-2097/)
 - **SciSummNet** — 科学文献引用驱动摘要；[GitHub](https://github.com/WING-NUS/scisumm-corpus)
 
-> 其余分类示例：`vision.md`, `biomedical.md` 等。
+> 其余分类示例：`vision.md`, `biomedical.md` 等。 -->
 
 ## 贡献指南
 见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。

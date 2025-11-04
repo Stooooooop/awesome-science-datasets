@@ -1,36 +1,73 @@
+# name: Link Check
+
+# on:
+#   push:
+#   pull_request:
+#   schedule:
+#     - cron: "0 2 * * 1"   # 每周一 02:00 UTC 例行检查
+
+# jobs:
+#   lychee:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Run lychee (Markdown + YAML/JSON)
+#         uses: lycheeverse/lychee-action@v1.10.0
+#         with:
+#           args: >
+#             --verbose
+#             --no-progress
+#             --max-redirects 5
+#             --accept 200,206,301,302,307,308
+#             --retry-wait-time 2
+#             --retry-count 2
+#             README.md categories/*.md datasets.yaml datasets.json
+#           fail: true
+#       - name: Save lychee report
+#         if: always()
+#         run: |
+#           mkdir -p reports
+#           cp -f lychee/out.md reports/link-check-report.md || true
+#       - name: Upload artifact
+#         if: always()
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: link-check-report
+#           path: reports/
 name: Link Check
 
 on:
   push:
+    branches: [ main ]
+    paths:
+      - "**/*.md"
+      - "**/*.yml"
+      - "**/*.yaml"
   pull_request:
-  schedule:
-    - cron: "0 2 * * 1"   # 每周一 02:00 UTC 例行检查
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   lychee:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run lychee (Markdown + YAML/JSON)
-        uses: lycheeverse/lychee-action@v1.10.0
+
+      - name: Link check with lychee
+        uses: lycheeverse/lychee-action@v2
         with:
           args: >
             --verbose
+            --accept 200,206,301,302,303,307,308,429
+            --method GET
+            --timeout 20
+            --max-redirects 10
+            --retry-wait-time 3
+            --max-retries 3
+            --require-https
             --no-progress
-            --max-redirects 5
-            --accept 200,206,301,302,307,308
-            --retry-wait-time 2
-            --retry-count 2
-            README.md categories/*.md datasets.yaml datasets.json
-          fail: true
-      - name: Save lychee report
-        if: always()
-        run: |
-          mkdir -p reports
-          cp -f lychee/out.md reports/link-check-report.md || true
-      - name: Upload artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: link-check-report
-          path: reports/
+            --exclude-all-private
+            --exclude-file .lycheeignore
+            **/*.md **/*.yaml **/*.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
