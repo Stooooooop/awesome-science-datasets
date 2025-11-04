@@ -1,6 +1,6 @@
 # Awesome Science Datasets & Benchmarks <!-- omit in toc -->
 
-> 面向【你的综述主题】的公开数据集 / 基准与工具清单。专注高质量链接与最少噪音。  
+> 面向科技文献的公开数据集列表。  
 > 欢迎 PR 补充与修正（见下方贡献指南）。
 
 [![Link Check](https://img.shields.io/github/actions/workflow/status/<yourname>/awesome-science-datasets/link-check.yml?branch=main)](./.github/workflows/link-check.yml)
@@ -24,7 +24,7 @@
 - 完整示例：见 [`datasets.yaml`](./datasets.yaml)
 
 ## 快速浏览（按类别）
-> 若喜欢人类可读的清单，可在 `categories/` 下维护专题页。
+>可在 `categories/` 下维护专题页。
 
 ### Summarization
 - **WikiHow** — 抽象风格的多步说明文本；[GitHub](https://github.com/mahnazkoupaee/WikiHow-Dataset)
