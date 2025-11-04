@@ -1,8 +1,14 @@
 % fig/datasets_tree.tex
 \documentclass[tikz,border=2pt]{standalone}
+\usepackage[utf8]{inputenc}           % 支持 UTF-8 字符（例如 ²）
 \usepackage{adjustbox}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
+
+% ---- 哑引用，避免 \citep 未定义导致的编译失败 ----
+\providecommand{\citep}[1]{[#1]}
+\providecommand{\citet}[1]{#1}
+% ---------------------------------------------------
 
 \begin{document}
 	\begin{adjustbox}{width=0.9\linewidth,keepaspectratio}
@@ -62,8 +68,4 @@
 				child {node[text width=2cm, align=center, yshift=0.4cm]{Physics/\\Chemistry/\\Material}
 					child {node[text width=16cm]{HoneyBee \citep{song2023honeybee}, SciQAG-24D \citep{wan2024sciqag}}}}
 				child {node[text width=2cm, align=center]{Multi}
-					child {node[text width=16cm]{S2ORC \citep{lo2020s2orc}, Multi-XScience \citep{lu2020multi}, FacetSum \citep{meng2021bringing}, SCIENCEQA \citep{lu2022learn}, CLS \citep{li2022csl}, BigSurvey \citep{liu2023generating}, SciQA \citep{auer2023sciqa}, Semantic Scholar \citep{kinney2023semantic}, SciAssess \citep{cai2025sciassess}, SciKnowEval \citep{feng2024sciknoweval}, SCHOLARQABENCH \citep{asai2024openscholar}}}}
-			};
-		\end{tikzpicture}
-	\end{adjustbox}
-\end{document}
+					child {node[text width=16cm]{S2ORC \citep{lo2020s2orc}, Multi-XScience \citep{lu2020multi}, FacetSum \citep{meng2021bringing}, SCIENCEQA \citep{lu2022learn}, CLS \citep{li2022csl}, BigSurvey \citep{liu2023generating}, SciQA \citep{auer2023sciqa}, Semanti
