@@ -1,0 +1,49 @@
+name: YAML to Markdown
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - datasets.yaml
+      - scripts/yaml2md.py
+      - .github/workflows/yaml2md.yml
+  pull_request:
+    branches: [ main ]
+    paths:
+      - datasets.yaml
+      - scripts/yaml2md.py
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 允许提交回仓库
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"   # 兼容 3.8，脚本里不要用 | None 语法
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Generate README table from YAML
+        run: |
+          python scripts/yaml2md.py
+
+      - name: Commit changes back
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet; then
+            git add README.md
+            git commit -m "chore: auto-update datasets table from YAML"
+            git push
+          fi
