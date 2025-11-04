@@ -9,6 +9,7 @@
 ## 目录
 - [目录](#目录)
 - [使用方法](#使用方法)
+- [Datasets (CSV Viewer)](#datasets-csv-viewer)
 - [数据清单（结构化索引）](#数据清单结构化索引)
 - [快速浏览（按类别）](#快速浏览按类别)
   - [Summarization](#summarization)
@@ -17,6 +18,10 @@
 ## 使用方法
 - 所有条目的“权威地址（primary）”指向项目官方 GitHub 或主页；若有论文与镜像地址一并给出。
 - 结构化索引见 `datasets.yaml`（或 `datasets.json`），便于二次开发与程序化检索。
+
+## Datasets (CSV Viewer)
+参见：[datasets_from_latex.csv](./data/datasets_from_latex.csv)  
+> 点击链接后，GitHub 会以可滚动表格展示 CSV。
 
 ## 数据清单（结构化索引）
 - 统一字段：`name / task / domain / modality / url.primary / url.paper / url.home / license / size / notes`
