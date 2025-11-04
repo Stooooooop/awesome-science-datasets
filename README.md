@@ -58,8 +58,114 @@
 
 | Dataset | Task | Paper | GitHub |
 | --- | --- | --- | --- |
-| WikiHow | summarization | [paper](https://arxiv.org/abs/1810.09305) | [github](https://github.com/mahnazkoupaee/WikiHow-Dataset) |
-| arXiv/PubMed | summarization | [paper](https://aclanthology.org/N18-2097/) | — |
-| SciSummNet | summarization | [paper](https://aclanthology.org/W19-8660/) | [github](https://github.com/WING-NUS/scisumm-corpus) |
+| PubLayNet | Layout&OCR | — | — |
+| DocBank | Layout&OCR&Formula Recognition | — | — |
+| DocLayNet | Layout&OCR | — | — |
+| OmniDocBench | Layout&OCR | — | — |
+| M6Doc | Layout&OCR | — | — |
+| IBEM | Layout&OCR | — | — |
+| TabLeX | Layout&OCR | — | — |
+| ICDAR 2021 | Layout&OCR | — | — |
+| PRImA | Layout&OCR | — | — |
+| Nougat | Layout&OCR&Table/Formula Recognition | — | — |
+| AceParse | Layout&OCR&Table/Formula Recognition | — | — |
+| TableBank | Table Recognition | — | — |
+| TabRecSet | Table Recognition | — | — |
+| PubTables-1M | Table Recognition | — | — |
+| ChemTable | Table Recognition | — | — |
+| Nougat For Formula | Formula Recognition | — | — |
+| CROHME | Formula Recognition | — | — |
+| HME100K | Formula Recognition | — | — |
+| MathWriting | Formula Recognition | — | — |
+| PEaCE | Chemical Recognition | — | — |
+| DECIMER.ai | Chemical Recognition | — | — |
+| MoIScribe | Chemical Recognition | — | — |
+| ReactionDataExtractor | Chemical Recognition | — | — |
+| S2abEL | Information Extraction | — | — |
+| Wiki-TabNER | Information Extraction | — | — |
+| AxCell | Information Extraction | — | — |
+| Symlink | Information Extraction | — | — |
+| SymDef | Information Extraction | — | — |
+| GENIA | IE | — | — |
+| BC2GM | IE | — | — |
+| NCBI Disease | IE | — | — |
+| CHEMDNER | IE | — | — |
+| BC5CDR | IE | — | — |
+| BioRED | IE | — | — |
+| SCITLDR | Summarization | — | — |
+| WikiHow | Summarization | — | — |
+| PubMed Summarization | Summarization | — | — |
+| FacetSum | Summarization | — | — |
+| CS-PaperSum | Summarization | — | — |
+| Multi-XScience | Summarization | — | — |
+| MS² | Summarization | — | — |
+| BigSurvey | Summarization | — | — |
+| SURVEYSUM | Summarization | — | — |
+| LEGOBench | Summarization | — | — |
+| SciCap+ | Captioning | — | — |
+| MMSci | Captioning | — | — |
+| ArXivCap | Captioning | — | — |
+| ACL-FIG | Classification | — | — |
+| LitSearch | Retrieval | — | — |
+| SciMMIR | Retrieval | — | — |
+| ARQMath | QA | — | — |
+| SciTSR | QA | — | — |
+| PubTabNet | QA | — | — |
+| TableVQA-Bench | QA | — | — |
+| DocVQA | QA | — | — |
+| PlotQA | QA | — | — |
+| ChartQA | QA | — | — |
+| OpenCQA | QA | — | — |
+| SciGraphQA | QA | — | — |
+| CharXiv | QA | — | — |
+| ChartLlama | QA | — | — |
+| SimChart9K | QA | — | — |
+| ReachQA | QA | — | — |
+| ECD | QA | — | — |
+| ChartBench | QA | — | — |
+| ChartX | QA | — | — |
+| MMC | QA | — | — |
+| BioRead | QA | — | — |
+| PubMedQA | QA | — | — |
+| BioMRC | QA | — | — |
+| ScholarlyRead | QA | — | — |
+| ChemLLMBench | QA | — | — |
+| ScholarChemQA | QA | — | — |
+| QASPER | QA | — | — |
+| QASA | QA | — | — |
+| LitQA | QA | — | — |
+| SCIBENCH | QA | — | — |
+| SciEval | QA | — | — |
+| ScholarQABench | QA | — | — |
+| SCIDQA | QA | — | — |
+| SciQAG-24D | QA | — | — |
+| Xiezhi | QA | — | — |
+| SciKnowEval | QA | — | — |
+| PeerQA | QA | — | — |
+| COVID-QA | QA | — | — |
+| BioASQ-TaskB | QA | — | — |
+| SciFIBench | QA | — | — |
+| SCI-CQA | QA | — | — |
+| ArXivQA | QA | — | — |
+| LLM4Mat-Bench | QA | — | — |
+| SPIQA | QA | — | — |
+| SciAssess | QA | — | — |
+| MMMU | QA | — | — |
+| LAB-Bench | QA | — | — |
+| MMCR | QA | — | — |
+| arXiv | Pretraining | — | — |
+| S2ORC | Pretraining | — | — |
+| PubMed Central | Pretraining | — | — |
+| PubMed | Pretraining | — | — |
+| CSL | Pretraining | — | — |
+| The Pile | Pretraining | — | — |
+| RedPajama | Pretraining | — | — |
+| Dolma | Pretraining | — | — |
+| CORD-19 | Pretraining | — | — |
+| SciInstruct | Multi-Task Instruction | — | — |
+| SciRIFF | Multi-Task Instruction | — | — |
+| SMoIlnstruct | Multi-Task Instruction | — | — |
+| HoneyBee | Multi-Task Instruction | — | — |
+| IDL | Multi-Task Instruction | — | — |
 <!-- DATASETS_TABLE_END -->
 
