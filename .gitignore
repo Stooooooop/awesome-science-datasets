@@ -1,0 +1,8 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Python local
+__pycache__
+.venv
+.env

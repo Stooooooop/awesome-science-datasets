@@ -1,0 +1,35 @@
+- name: WikiHow
+  task: summarization
+  domain: general
+  modality: text
+  url:
+    primary: https://github.com/mahnazkoupaee/WikiHow-Dataset
+    paper: https://arxiv.org/abs/1810.09305
+    home: null
+  license: unknown
+  size: "~230k pairs"
+  notes: "高抽象度，多步骤说明文本"
+
+- name: arXiv/PubMed
+  task: summarization
+  domain: scientific
+  modality: text
+  url:
+    primary: null
+    paper: https://aclanthology.org/N18-2097/
+    home: https://cs.arizona.edu/~cohan/pubs.html
+  license: "varies"
+  size: "arXiv≈215k; PubMed≈133k"
+  notes: "长文摘要；常用于层级/长上下文建模"
+
+- name: SciSummNet
+  task: summarization
+  domain: scientific
+  modality: text
+  url:
+    primary: https://github.com/WING-NUS/scisumm-corpus
+    paper: https://aclanthology.org/W19-8660/
+    home: null
+  license: "research-only?"
+  size: "~1k papers"
+  notes: "引用驱动的科学生成/检索"
