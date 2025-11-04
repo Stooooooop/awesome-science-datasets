@@ -14,8 +14,8 @@
 - [使用方法](#使用方法)
 - [项目介绍](#项目介绍)
 - [数据清单（结构化索引）](#数据清单结构化索引)
+- [完整的数据集表格 (from CSV)](#完整的数据集表格-from-csv)
 - [贡献指南](#贡献指南)
-- [Datasets (Task + Links)](#datasets-task--links)
 
 ## 使用方法
 - 指向数据集项目官方 GitHub 或主页；若有论文与镜像地址一并给出。
@@ -43,53 +43,8 @@
 
 > 其余分类示例：`vision.md`, `biomedical.md` 等。 -->
 
-## 贡献指南
-见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
-
-<!-- DATASETS_TABLE_START -->
-## Datasets (Task + Links)
-
-> 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。
-> 说明：当前已隐藏 **Multi-Task Instruction, Pretraining** 类别（仍保留在 YAML 中）。
-
-| Dataset | Task | Paper | GitHub |
-| --- | --- | --- | --- |
-| PubLayNet | Layout&OCR | [paper](https://arxiv.org/abs/1908.07836) | [github](https://ar5iv.labs.arxiv.org/html/1908.07836) |
-| DocBank | Layout&OCR&Formula Recognition | [paper](https://doc-analysis.github.io/docbank-page/) | [github](https://github.com/doc-analysis/DocBank) |
-| DocLayNet | Layout&OCR | [paper](https://arxiv.org/abs/2210.06155) | [github](https://github.com/DS4SD/DocLayNet) |
-| OmniDocBench | Layout&OCR | [paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Ouyang_OmniDocBench_Benchmarking_Diverse_PDF_Document_Parsing_with_Comprehensive_Annotations_CVPR_2025_paper.pdf) | [github](https://github.com/opendatalab/OmniDocBench) |
-| M6Doc | Layout&OCR | [paper](https://arxiv.org/abs/2305.08719) | [github](https://github.com/HCIILAB/M6Doc) |
-| IBEM | Layout&OCR (Formula detection) | [paper](https://dl.acm.org/doi/10.1016/j.patrec.2023.05.033) | — |
-| TabLeX | Table Recognition | [paper](https://arxiv.org/abs/2105.06400) | — |
-| ICDAR 2021 DocVQA | Document VQA | [paper](https://arxiv.org/abs/2111.05547) | — |
-| PRImA Layout Analysis | Layout&OCR | — | — |
-| Nougat | Layout&OCR&Table/Formula Recognition | [paper](https://facebookresearch.github.io/nougat/) | [github](https://github.com/facebookresearch/nougat) |
-| AceParse | Layout&OCR&Table/Formula Recognition | [paper](https://arxiv.org/abs/2402.18903) | — |
-| TableBank | Table Recognition | [paper](https://aclanthology.org/2020.lrec-1.236/) | [github](https://github.com/doc-analysis/TableBank) |
-| TabRecSet | Table Recognition (end-to-end) | [paper](https://www.researchgate.net/publication/368754251) | [github](https://github.com/MaxKinny/TabRecSet) |
-| PubTables-1M | Table Recognition | [paper](https://openaccess.thecvf.com/content/CVPR2022/html/Smock_PubTables-1M_Towards_Comprehensive_Table_Extraction_From_Unstructured_Documents_CVPR_2022_paper.html) | [github](https://github.com/microsoft/table-transformer) |
-| DECIMER.ai | Chemical Recognition | [paper](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00505-8) | [github](https://github.com/Kohulan/DECIMER-Image_Transformer) |
-| CROHME | Formula Recognition (online HME) | — | — |
-| HME100K | Formula Recognition (offline HME) | [paper](https://arxiv.org/pdf/2203.01601) | [github](https://github.com/Phymond/HME100K) |
-| MathWriting | Formula Recognition (online/offline) | [paper](https://arxiv.org/abs/2404.10690) | [github](https://github.com/google-research/google-research/tree/master/mathwriting) |
-| PEaCE | Chemical OCR | [paper](https://aclanthology.org/2024.lrec-main.1110.pdf) | [github](https://github.com/ZN1010/PEaCE) |
-| DocVQA (WACV 2021 dataset) | Document VQA | [paper](https://openaccess.thecvf.com/content/WACV2021/papers/Mathew_DocVQA_A_Dataset_for_VQA_on_Document_Images_WACV_2021_paper.pdf) | — |
-| GENIA | IE | — | — |
-| BC5CDR | IE (Chem/Disease, relations) | [paper](https://biocreative.bioinformatics.udel.edu/media/store/files/2016/CDR_Task.pdf) | [github](https://github.com/JHnlp/BioCreative-V-CDR-Corpus) |
-| NCBI Disease | IE (Disease) | — | — |
-| CHEMDNER | IE (Chemical NER) | [paper](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S2) | — |
-| BioRED | IE (Doc-level RE) | [paper](https://academic.oup.com/bib/article/23/5/bbac282/6645993) | — |
-| SCITLDR | Summarization | — | [github](https://github.com/allenai/scitldr) |
-| Multi-XScience | Summarization (multi-doc) | [paper](https://yaolu.github.io/upload/multixscience/Multi_XScience_Appendix.pdf) | [github](https://github.com/yaolu/Multi-XScience) |
-| MS^2 | Summarization (multi-doc, biomedical) | [paper](https://arxiv.org/abs/2104.06486) | [github](https://github.com/allenai/ms2) |
-| PubMedQA | QA (biomedical) | — | [github](https://github.com/pubmedqa/pubmedqa) |
-| BioMRC | QA / MRC (biomedical) | [paper](https://arxiv.org/abs/2005.06376) | — |
-| LitSearch | Retrieval benchmark | [paper](https://aclanthology.org/2024.emnlp-main.840.pdf) | [github](https://github.com/princeton-nlp/LitSearch) |
-| SciMMIR | Image&Text Retrieval (scientific) | [paper](https://aclanthology.org/2024.findings-acl.746.pdf) | [github](https://github.com/Wusiwei0410/SciMMIR) |
-<!-- DATASETS_TABLE_END -->
-
 <!-- DATASETS_MATRIX_START -->
-## Full Dataset Matrix (from CSV)
+## 完整的数据集表格 (from CSV)
 
 > 字段：`name, release_year, modality, task, is_multi_doc, is_only_eval, label_method, domain, size`
 
@@ -205,3 +160,51 @@
 | HoneyBee | 2023 | Text | Multi-Task Instruction | No | No | Manual&Auto | Materials Science | 52k instructions |
 | IDL |  | Text | Multi-Task Instruction | No | No | Manual | Industry | 15M documents |
 <!-- DATASETS_MATRIX_END -->
+
+
+
+<!-- DATASETS_TABLE_START -->
+##  数据集 (Task + Links)
+
+> 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。
+> 说明：当前已隐藏 **Multi-Task Instruction, Pretraining** 类别（仍保留在 YAML 中）。
+
+| Dataset | Task | Paper | GitHub |
+| --- | --- | --- | --- |
+| PubLayNet | Layout&OCR | [paper](https://arxiv.org/abs/1908.07836) | [github](https://ar5iv.labs.arxiv.org/html/1908.07836) |
+| DocBank | Layout&OCR&Formula Recognition | [paper](https://doc-analysis.github.io/docbank-page/) | [github](https://github.com/doc-analysis/DocBank) |
+| DocLayNet | Layout&OCR | [paper](https://arxiv.org/abs/2210.06155) | [github](https://github.com/DS4SD/DocLayNet) |
+| OmniDocBench | Layout&OCR | [paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Ouyang_OmniDocBench_Benchmarking_Diverse_PDF_Document_Parsing_with_Comprehensive_Annotations_CVPR_2025_paper.pdf) | [github](https://github.com/opendatalab/OmniDocBench) |
+| M6Doc | Layout&OCR | [paper](https://arxiv.org/abs/2305.08719) | [github](https://github.com/HCIILAB/M6Doc) |
+| IBEM | Layout&OCR (Formula detection) | [paper](https://dl.acm.org/doi/10.1016/j.patrec.2023.05.033) | — |
+| TabLeX | Table Recognition | [paper](https://arxiv.org/abs/2105.06400) | — |
+| ICDAR 2021 DocVQA | Document VQA | [paper](https://arxiv.org/abs/2111.05547) | — |
+| PRImA Layout Analysis | Layout&OCR | — | — |
+| Nougat | Layout&OCR&Table/Formula Recognition | [paper](https://facebookresearch.github.io/nougat/) | [github](https://github.com/facebookresearch/nougat) |
+| AceParse | Layout&OCR&Table/Formula Recognition | [paper](https://arxiv.org/abs/2402.18903) | — |
+| TableBank | Table Recognition | [paper](https://aclanthology.org/2020.lrec-1.236/) | [github](https://github.com/doc-analysis/TableBank) |
+| TabRecSet | Table Recognition (end-to-end) | [paper](https://www.researchgate.net/publication/368754251) | [github](https://github.com/MaxKinny/TabRecSet) |
+| PubTables-1M | Table Recognition | [paper](https://openaccess.thecvf.com/content/CVPR2022/html/Smock_PubTables-1M_Towards_Comprehensive_Table_Extraction_From_Unstructured_Documents_CVPR_2022_paper.html) | [github](https://github.com/microsoft/table-transformer) |
+| DECIMER.ai | Chemical Recognition | [paper](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00505-8) | [github](https://github.com/Kohulan/DECIMER-Image_Transformer) |
+| CROHME | Formula Recognition (online HME) | — | — |
+| HME100K | Formula Recognition (offline HME) | [paper](https://arxiv.org/pdf/2203.01601) | [github](https://github.com/Phymond/HME100K) |
+| MathWriting | Formula Recognition (online/offline) | [paper](https://arxiv.org/abs/2404.10690) | [github](https://github.com/google-research/google-research/tree/master/mathwriting) |
+| PEaCE | Chemical OCR | [paper](https://aclanthology.org/2024.lrec-main.1110.pdf) | [github](https://github.com/ZN1010/PEaCE) |
+| DocVQA (WACV 2021 dataset) | Document VQA | [paper](https://openaccess.thecvf.com/content/WACV2021/papers/Mathew_DocVQA_A_Dataset_for_VQA_on_Document_Images_WACV_2021_paper.pdf) | — |
+| GENIA | IE | — | — |
+| BC5CDR | IE (Chem/Disease, relations) | [paper](https://biocreative.bioinformatics.udel.edu/media/store/files/2016/CDR_Task.pdf) | [github](https://github.com/JHnlp/BioCreative-V-CDR-Corpus) |
+| NCBI Disease | IE (Disease) | — | — |
+| CHEMDNER | IE (Chemical NER) | [paper](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S2) | — |
+| BioRED | IE (Doc-level RE) | [paper](https://academic.oup.com/bib/article/23/5/bbac282/6645993) | — |
+| SCITLDR | Summarization | — | [github](https://github.com/allenai/scitldr) |
+| Multi-XScience | Summarization (multi-doc) | [paper](https://yaolu.github.io/upload/multixscience/Multi_XScience_Appendix.pdf) | [github](https://github.com/yaolu/Multi-XScience) |
+| MS^2 | Summarization (multi-doc, biomedical) | [paper](https://arxiv.org/abs/2104.06486) | [github](https://github.com/allenai/ms2) |
+| PubMedQA | QA (biomedical) | — | [github](https://github.com/pubmedqa/pubmedqa) |
+| BioMRC | QA / MRC (biomedical) | [paper](https://arxiv.org/abs/2005.06376) | — |
+| LitSearch | Retrieval benchmark | [paper](https://aclanthology.org/2024.emnlp-main.840.pdf) | [github](https://github.com/princeton-nlp/LitSearch) |
+| SciMMIR | Image&Text Retrieval (scientific) | [paper](https://aclanthology.org/2024.findings-acl.746.pdf) | [github](https://github.com/Wusiwei0410/SciMMIR) |
+<!-- DATASETS_TABLE_END -->
+
+
+## 贡献指南
+见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
