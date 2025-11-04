@@ -1,0 +1,42 @@
+name: Update README datasets table
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "datasets.yaml"
+      - ".github/workflows/update-readme.yml"
+      - "scripts/**"
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - "datasets.yaml"
+      - "scripts/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install pyyaml pandas
+      - name: Generate README table
+        run: |
+          mkdir -p scripts
+          python scripts/yaml2md.py || true
+      - name: Commit changes if any
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "docs: auto-update datasets table from datasets.yaml"
+            git push
+          else
+            echo "No changes to commit."
+          fi

@@ -9,7 +9,7 @@
 ## 目录
 - [目录](#目录)
 - [使用方法](#使用方法)
-- [Datasets (CSV Viewer)](#datasets-csv-viewer)
+- [Datasets (Task + Links)](#datasets-task--links)
 - [数据清单（结构化索引）](#数据清单结构化索引)
 - [快速浏览（按类别）](#快速浏览按类别)
   - [Summarization](#summarization)
@@ -19,9 +19,20 @@
 - 所有条目的“权威地址（primary）”指向项目官方 GitHub 或主页；若有论文与镜像地址一并给出。
 - 结构化索引见 `datasets.yaml`（或 `datasets.json`），便于二次开发与程序化检索。
 
-## Datasets (CSV Viewer)
+<!-- ## Datasets (CSV Viewer)
 参见：[datasets_from_latex.csv](./data/datasets_from_latex.csv)  
-> 点击链接后，GitHub 会以可滚动表格展示 CSV。
+> 点击链接后，GitHub 会以可滚动表格展示 CSV。 -->
+
+
+## Datasets (Task + Links)
+
+> 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。请在 `datasets.yaml` 的 `url.paper` 与 `url.primary` 补齐官方链接后，表格会自动更新。
+
+| Dataset | Task | Paper | GitHub |
+| --- | --- | --- | --- |
+| …自动生成… |
+
+
 
 ## 数据清单（结构化索引）
 - 统一字段：`name / task / domain / modality / url.primary / url.paper / url.home / license / size / notes`
