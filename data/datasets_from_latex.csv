@@ -1,0 +1,110 @@
+name,release_year,modality,task,is_multi_doc,is_only_eval,label_method,domain,size
+PubLayNet,2019,Image&Text,Layout&OCR,No,No,Auto,Biomedical,360k pages
+DocBank,2020,Image&Text,Layout&OCR&Formula Recognition,No,No,Auto,Computer,500k pages
+DocLayNet,2022,Image&Text,Layout&OCR,No,No,Manual,Multi-domain,80k pages
+OmniDocBench,2024,Image&Text,Layout&OCR,No,No,Manual,Multi-domain,981 pages
+M6Doc,2022,Image&Text,Layout&OCR,No,No,Manual,Multi-domain,237k instances
+IBEM,2022,Image&Text,Layout&OCR,No,No,Manual,Multi-domain,-
+TabLeX,2020,Image&Text,Layout&OCR,No,No,Auto,Scientific,-
+ICDAR 2021,2021,Image&Text,Layout&OCR,No,Yes,Manual,Scientific,-
+PRImA,2009,Image&Text,Layout&OCR,No,No,Manual,Multi-domain,-
+Nougat,2023,Image&Text,Layout&OCR&Table/Formula Recognition,No,No,Auto,-,-
+AceParse,2023,Image&Text,Layout&OCR&Table/Formula Recognition,No,No,Auto,-,500k parsed pairs
+TableBank,2020,Image&Text,Table Recognition,No,No,Auto,Multi-domain,417k tables
+TabRecSet,2023,Image&Text,Table Recognition,No,No,Auto,Multi-domain,38.1k tables
+PubTables-1M,2021,Image&Text,Table Recognition,No,No,Auto,Scientific,1M tables
+ChemTable,2025,Image&Text,Table Recognition,No,No,Manual,Chemistry,-
+Nougat For Formula,2024,Image&Text,Formula Recognition,No,No,Auto,Scientific,-
+CROHME,2023,Image&Text,Formula Recognition,No,Yes,Manual,-,11k images
+HME100K,2024,Image&Text,Formula Recognition,No,No,Manual,-,100k images
+MathWriting,2024,Image&Text,Formula Recognition,No,No,Manual,-,230k images
+PEaCE,2024,Image&Text,Chemical Recognition,No,No,Manual,Chemistry,-
+DECIMER.ai,2023,Image&Text,Chemical Recognition,No,No,Auto,Chemistry,-
+MoIScribe,2023,Image&Text,Chemical Recognition,No,No,Manual,Chemistry,-
+ReactionDataExtractor,2023,Image&Text,Chemical Recognition,No,No,Manual,Chemistry,-
+S2abEL,2023,Text,Information Extraction,No,No,Manual,Biomedical,-
+Wiki-TabNER,2024,Text,Information Extraction,No,No,Manual,-,-
+AxCell,2020,Text,Information Extraction,No,No,Auto,-,-
+Symlink,2022,Text,Information Extraction,No,No,Manual,-,-
+SymDef,2022,Text,Information Extraction,No,No,Manual,-,-
+GENIA,2003,Text,IE,No,No,Manual,Biomedical,-
+BC2GM,2008,Text,IE,No,No,Manual,Biomedical,-
+NCBI Disease,2014,Text,IE,No,No,Manual,Biomedical,800 abstracts
+CHEMDNER,2015,Text,IE,No,No,Manual,Biomedical,10k abstracts
+BC5CDR,2016,Text,IE,No,No,Manual,Biomedical,1.5k abstracts
+BioRED,2022,Text,IE,No,No,Manual,Biomedical,600 abstracts
+SCITLDR,2020,Text,Summarization,No,No,Manual,-,5.4k full-text papers
+WikiHow,2018,Text,Summarization,No,No,Manual,-,230k articles
+PubMed Summarization,2018,Text,Summarization,No,No,Auto,Biomedical,-
+FacetSum,2021,Text,Summarization,No,No,Manual,-,60k full-text papers
+CS-PaperSum,2025,Text,Summarization,No,No,Auto,Computer Science,91.9k full-text papers
+Multi-XScience,2020,Text,Summarization,Yes,No,Auto,-,30k instances
+MS²,2021,Text,Summarization,Yes,No,Manual,Biomedical,20k reviews
+BigSurvey,2022,Text,Summarization,Yes,No,Auto,-,7k full-text surveys
+SURVEYSUM,2024,Text,Summarization,Yes,No,Manual,-,79 sections
+LEGOBench,2023,Text,Summarization,No,No,Auto,Scientific,-
+SciCap+,2024,Image&Text,Captioning,No,No,Manual,Scientific,-
+MMSci,2023,Image&Text,Captioning,No,No,Manual,Scientific,-
+ArXivCap,2024,Image&Text,Captioning,No,No,Auto,Scientific,6.4M images & 3.9M captions
+ACL-FIG,2023,Image,Classification,No,No,Manual,-,112k figures
+LitSearch,2024,Text,Retrieval,Yes,No,Manual,-,597 queries
+SciMMIR,2024,Image&Text,Retrieval,No,No,Manual&Auto,Scientific,530k image-text pairs
+ARQMath,2020,Text,QA,No,No,Manual,Math,-
+SciTSR,2019,Table&Text,QA,No,No,Auto,-,-
+PubTabNet,2020,Table&Text,QA,No,No,Auto,-,-
+TableVQA-Bench,2024,Table&Text,QA,No,No,Auto,-,-
+DocVQA,2021,Image&Text,QA,No,No,Manual,-,-
+PlotQA,2020,Chart&Text,QA,No,No,Manual&Auto,-,224k QA pairs
+ChartQA,2022,Chart&Text,QA,No,No,Manual&Auto,-,33k QA pairs
+OpenCQA,2022,Chart&Text,QA,No,No,Manual,-,-
+SciGraphQA,2023,Chart&Text,QA,No,No,Auto,-,295k QA pairs
+CharXiv,,Chart&Text,QA,No,Yes,Manual,-,2.3k QA pairs
+ChartLlama,2023,Chart&Text,QA,No,No,Auto,-,-
+SimChart9K,2023,Chart&Text,QA,No,No,Auto,-,9k QA pairs
+ReachQA,2024,Chart&Text,QA,No,No,Auto,-,-
+ECD,2025,Chart&Text,QA,No,No,Auto,-,-
+ChartBench,2023,Chart&Text,QA,No,Yes,Auto,-,66.6k QA pairs
+ChartX,2024,Chart&Text,QA,No,Yes,Manual,-,-
+MMC,2023,Chart&Text,QA,No,No,Manual,-,-
+BioRead,2018,Text,QA,No,No,Manual&Auto,Biomedical,10k QA pairs
+PubMedQA,2019,Text,QA,No,No,Manual&Auto,Biomedical,273k QA pairs
+BioMRC,2020,Text,QA,No,No,Auto,Biomedical,1M QA pairs
+ScholarlyRead,2020,Text,QA,No,No,Manual,-,10k QA pairs
+ChemLLMBench,2023,Text,QA,No,Yes,Manual,Chemistry,-
+ScholarChemQA,2025,Text,QA,No,No,Manual&Auto,Chemistry,40k QA pairs
+QASPER,2021,Text,QA,Yes,No,Manual,NLP,5k QA pairs
+QASA,2023,Text,QA,Yes,No,Manual,-,1.8k QA pairs
+LitQA,2023,Text,QA,Yes,No,Manual,Biology,50 QA pairs
+SCIBENCH,,Text,QA,No,Yes,Manual,-,-
+SciEval,2024,Text,QA,No,Yes,Manual,-,18k QA pairs
+ScholarQABench,2024,Text,QA,Yes,Yes,Manual,-,2.9k QA pairs
+SCIDQA,2024,Text,QA,Yes,No,Manual,-,2.9k QA pairs
+SciQAG-24D,2024,Text,QA,Yes,No,Auto,-,188k QA pairs
+Xiezhi,2024,Text,QA,No,Yes,Manual,-,249k QA pairs
+SciKnowEval,2024,Text,QA,No,Yes,Manual,-,70k QA pairs
+PeerQA,2025,Text,QA,Yes,No,Manual,-,579 QA pairs
+COVID-QA,2020,Text,QA,Yes,No,Manual,COVID-19,-
+BioASQ-TaskB,2013-2025,Text,QA,Yes,No,Manual,Biomedical,-
+SciFIBench,2024,Image&Text,QA,No,Yes,Manual,Scientific,2k QA pairs
+SCI-CQA,2024,Image&Text,QA,No,No,Manual,Scientific,10k QA pairs
+ArXivQA,2024,Image&Text,QA,No,No,Auto,Scientific,-
+LLM4Mat-Bench,2024,Image&Text,QA,No,Yes,Auto,Materials Science,1.97M samples
+SPIQA,2024,Image&Text,QA,No,Yes,Manual,Scientific,-
+SciAssess,2024,Text,QA,No,Yes,Manual,Scientific,"6,888 QA pairs"
+MMMU,2023,Image&Text,QA,No,No,Manual,-,11.5k QA pairs
+LAB-Bench,2024,Image&Text,QA,No,No,Manual,Biology,2.4k
+MMCR,2025,Image&Text,QA,No,No,Manual&Auto,Scientific,310k
+arXiv,1991,Text,Pretraining,No,No,Auto,Multi-domain,2.6M full-text papers
+S2ORC,2020,Text,Pretraining,No,No,Auto,Multi-domain,81M full-text papers
+PubMed Central,2000,Text,Pretraining,No,No,Auto,Biomedical,10M full-text papers
+PubMed,1966,Text,Pretraining,No,No,Auto,Biomedical,35M paper metadata
+CSL,2022,Text,Pretraining,No,No,Auto,Chinese,396k paper metadata
+The Pile,2020,Text,Pretraining,No,No,Auto,Multi-domain,800GB raw text
+RedPajama,2024,Text,Pretraining,No,No,Auto,General,-
+Dolma,2024,Text,Pretraining,No,No,Auto,General,3T tokens
+CORD-19,2020,Text,Pretraining,No,No,Auto,COVID-19,1M full-text papers
+SciInstruct,2024,Text,Multi-Task Instruction,No,No,Manual,Scientific,100k examples
+SciRIFF,,Text,Multi-Task Instruction,No,No,Manual,Scientific,3.1k abstracts
+SMoIlnstruct,,Text,Multi-Task Instruction,No,No,Auto,Molecular,340k instructions
+HoneyBee,2023,Text,Multi-Task Instruction,No,No,Manual&Auto,Materials Science,52k instructions
+IDL,,Text,Multi-Task Instruction,No,No,Manual,Industry,15M documents
