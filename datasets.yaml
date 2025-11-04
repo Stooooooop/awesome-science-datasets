@@ -1,1526 +1,198 @@
 - name: PubLayNet
-  release_year: 2019
-  modality: Image&Text
   task: Layout&OCR
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Biomedical
-  size: 360k pages
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://arxiv.org/abs/1908.07836
+  code_url: https://ar5iv.labs.arxiv.org/html/1908.07836
+  homepage_url: https://github.com/ibm-aur-nlp/PubLayNet
+  note: Derived from PubMed Central PDFs.
+  # :contentReference[oaicite:0]{index=0}
+
 - name: DocBank
-  release_year: 2020
-  modality: Image&Text
   task: Layout&OCR&Formula Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Computer
-  size: 500k pages
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://doc-analysis.github.io/docbank-page/
+  code_url: https://github.com/doc-analysis/DocBank
+  homepage_url: https://doc-analysis.github.io/docbank-page/
+  # :contentReference[oaicite:1]{index=1}
+
 - name: DocLayNet
-  release_year: 2022
-  modality: Image&Text
   task: Layout&OCR
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Multi-domain
-  size: 80k pages
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://arxiv.org/abs/2210.06155
+  code_url: https://github.com/DS4SD/DocLayNet
+  homepage_url: https://huggingface.co/datasets/ds4sd/DocLayNet
+  # :contentReference[oaicite:2]{index=2}
+
 - name: OmniDocBench
-  release_year: 2024
-  modality: Image&Text
   task: Layout&OCR
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Multi-domain
-  size: 981 pages
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://openaccess.thecvf.com/content/CVPR2025/papers/Ouyang_OmniDocBench_Benchmarking_Diverse_PDF_Document_Parsing_with_Comprehensive_Annotations_CVPR_2025_paper.pdf
+  code_url: https://github.com/opendatalab/OmniDocBench
+  homepage_url: https://huggingface.co/datasets/opendatalab/OmniDocBench
+  # :contentReference[oaicite:3]{index=3}
+
 - name: M6Doc
-  release_year: 2022
-  modality: Image&Text
   task: Layout&OCR
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Multi-domain
-  size: 237k instances
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://arxiv.org/abs/2305.08719
+  code_url: https://github.com/HCIILAB/M6Doc
+  homepage_url: https://openaccess.thecvf.com/content/CVPR2023/papers/Cheng_M6Doc_A_Large-Scale_Multi-Format_Multi-Type_Multi-Layout_Multi-Language_Multi-Annotation_Category_Dataset_CVPR_2023_paper.pdf
+  # :contentReference[oaicite:4]{index=4}
+
 - name: IBEM
-  release_year: 2022
-  modality: Image&Text
-  task: Layout&OCR
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Multi-domain
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  task: Layout&OCR (Formula detection)
+  paper_url: https://dl.acm.org/doi/10.1016/j.patrec.2023.05.033
+  homepage_url: https://zenodo.org/records/4757865
+  # :contentReference[oaicite:5]{index=5}
+
 - name: TabLeX
-  release_year: 2020
-  modality: Image&Text
+  task: Table Recognition
+  paper_url: https://arxiv.org/abs/2105.06400
+  homepage_url: https://opendatalab.com/OpenDataLab/TabLeX/download
+  # :contentReference[oaicite:6]{index=6}
+
+- name: ICDAR 2021 DocVQA
+  task: Document VQA
+  paper_url: https://arxiv.org/abs/2111.05547
+  homepage_url: https://iapr.org/archives/icdar2021/index.html?p=29526.html
+  # :contentReference[oaicite:7]{index=7}
+
+- name: PRImA Layout Analysis
   task: Layout&OCR
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Scientific
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ICDAR 2021
-  release_year: 2021
-  modality: Image&Text
-  task: Layout&OCR
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: Scientific
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: PRImA
-  release_year: 2009
-  modality: Image&Text
-  task: Layout&OCR
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Multi-domain
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  homepage_url: https://www.primaresearch.org/datasets/Layout_Analysis
+  # :contentReference[oaicite:8]{index=8}
+
 - name: Nougat
-  release_year: 2023
-  modality: Image&Text
   task: Layout&OCR&Table/Formula Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://facebookresearch.github.io/nougat/
+  code_url: https://github.com/facebookresearch/nougat
+  # :contentReference[oaicite:9]{index=9}
+
 - name: AceParse
-  release_year: 2023
-  modality: Image&Text
   task: Layout&OCR&Table/Formula Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: 500k parsed pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://arxiv.org/abs/2402.18903
+  homepage_url: https://github.com/AlibabaPAI/aceparse
+  # （若与你表中年份不一致可先保留占位，稍后我可统一核对）
+
 - name: TableBank
-  release_year: 2020
-  modality: Image&Text
   task: Table Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Multi-domain
-  size: 417k tables
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://aclanthology.org/2020.lrec-1.236/
+  code_url: https://github.com/doc-analysis/TableBank
+  homepage_url: https://doc-analysis.github.io/tablebank-page/
+  # :contentReference[oaicite:10]{index=10}
+
 - name: TabRecSet
-  release_year: 2023
-  modality: Image&Text
-  task: Table Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Multi-domain
-  size: 38.1k tables
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  task: Table Recognition (end-to-end)
+  paper_url: https://www.researchgate.net/publication/368754251
+  code_url: https://github.com/MaxKinny/TabRecSet
+  # :contentReference[oaicite:11]{index=11}
+
 - name: PubTables-1M
-  release_year: 2021
-  modality: Image&Text
   task: Table Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Scientific
-  size: 1M tables
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ChemTable
-  release_year: 2025
-  modality: Image&Text
-  task: Table Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Chemistry
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: Nougat For Formula
-  release_year: 2024
-  modality: Image&Text
-  task: Formula Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Scientific
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: CROHME
-  release_year: 2023
-  modality: Image&Text
-  task: Formula Recognition
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: '-'
-  size: 11k images
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: HME100K
-  release_year: 2024
-  modality: Image&Text
-  task: Formula Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 100k images
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: MathWriting
-  release_year: 2024
-  modality: Image&Text
-  task: Formula Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 230k images
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: PEaCE
-  release_year: 2024
-  modality: Image&Text
-  task: Chemical Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Chemistry
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://openaccess.thecvf.com/content/CVPR2022/html/Smock_PubTables-1M_Towards_Comprehensive_Table_Extraction_From_Unstructured_Documents_CVPR_2022_paper.html
+  code_url: https://github.com/microsoft/table-transformer
+  # :contentReference[oaicite:12]{index=12}
+
 - name: DECIMER.ai
-  release_year: 2023
-  modality: Image&Text
   task: Chemical Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Chemistry
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: MoIScribe
-  release_year: 2023
-  modality: Image&Text
-  task: Chemical Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Chemistry
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ReactionDataExtractor
-  release_year: 2023
-  modality: Image&Text
-  task: Chemical Recognition
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Chemistry
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: S2abEL
-  release_year: 2023
-  modality: Text
-  task: Information Extraction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Biomedical
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: Wiki-TabNER
-  release_year: 2024
-  modality: Text
-  task: Information Extraction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: AxCell
-  release_year: 2020
-  modality: Text
-  task: Information Extraction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: Symlink
-  release_year: 2022
-  modality: Text
-  task: Information Extraction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SymDef
-  release_year: 2022
-  modality: Text
-  task: Information Extraction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  paper_url: https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00505-8
+  code_url: https://github.com/Kohulan/DECIMER-Image_Transformer
+  homepage_url: https://github.com/OBrink/DECIMER.ai
+  # :contentReference[oaicite:13]{index=13}
+
+- name: CROHME
+  task: Formula Recognition (online HME)
+  homepage_url: https://www.isical.ac.in/~crohme/
+  data_url: https://www.isical.ac.in/~crohme/CROHME_data.html
+  # :contentReference[oaicite:14]{index=14}
+
+- name: HME100K
+  task: Formula Recognition (offline HME)
+  paper_url: https://arxiv.org/pdf/2203.01601
+  code_url: https://github.com/Phymond/HME100K
+  # :contentReference[oaicite:15]{index=15}
+
+- name: MathWriting
+  task: Formula Recognition (online/offline)
+  paper_url: https://arxiv.org/abs/2404.10690
+  code_url: https://github.com/google-research/google-research/tree/master/mathwriting
+  data_url: https://storage.googleapis.com/mathwriting_data/mathwriting-2024.tgz
+  # :contentReference[oaicite:16]{index=16}
+
+- name: PEaCE
+  task: Chemical OCR
+  paper_url: https://aclanthology.org/2024.lrec-main.1110.pdf
+  code_url: https://github.com/ZN1010/PEaCE
+  # :contentReference[oaicite:17]{index=17}
+
+- name: DocVQA (WACV 2021 dataset)
+  task: Document VQA
+  paper_url: https://openaccess.thecvf.com/content/WACV2021/papers/Mathew_DocVQA_A_Dataset_for_VQA_on_Document_Images_WACV_2021_paper.pdf
+  # :contentReference[oaicite:18]{index=18}
+
+# —— 纯文本 / 生物医学 IE & QA & Summarization ——
+
 - name: GENIA
-  release_year: 2003
-  modality: Text
   task: IE
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Biomedical
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: BC2GM
-  release_year: 2008
-  modality: Text
-  task: IE
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Biomedical
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: NCBI Disease
-  release_year: 2014
-  modality: Text
-  task: IE
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Biomedical
-  size: 800 abstracts
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: CHEMDNER
-  release_year: 2015
-  modality: Text
-  task: IE
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Biomedical
-  size: 10k abstracts
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  homepage_url: https://www.geniaproject.org/genia-corpus
+  # :contentReference[oaicite:19]{index=19}
+
 - name: BC5CDR
-  release_year: 2016
-  modality: Text
-  task: IE
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Biomedical
-  size: 1.5k abstracts
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  task: IE (Chem/Disease, relations)
+  paper_url: https://biocreative.bioinformatics.udel.edu/media/store/files/2016/CDR_Task.pdf
+  code_url: https://github.com/JHnlp/BioCreative-V-CDR-Corpus
+  # :contentReference[oaicite:20]{index=20}
+
+- name: NCBI Disease
+  task: IE (Disease)
+  homepage_url: https://www.ncbi.nlm.nih.gov/research/bionlp/Data/disease/
+  # :contentReference[oaicite:21]{index=21}
+
+- name: CHEMDNER
+  task: IE (Chemical NER)
+  paper_url: https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S2
+  homepage_url: https://huggingface.co/datasets/bigbio/chemdner
+  # :contentReference[oaicite:22]{index=22}
+
 - name: BioRED
-  release_year: 2022
-  modality: Text
-  task: IE
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Biomedical
-  size: 600 abstracts
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  task: IE (Doc-level RE)
+  paper_url: https://academic.oup.com/bib/article/23/5/bbac282/6645993
+  homepage_url: https://pubmed.ncbi.nlm.nih.gov/35849818/
+  # :contentReference[oaicite:23]{index=23}
+
 - name: SCITLDR
-  release_year: 2020
-  modality: Text
   task: Summarization
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 5.4k full-text papers
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: WikiHow
-  release_year: 2018
-  modality: Text
-  task: Summarization
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 230k articles
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: PubMed Summarization
-  release_year: 2018
-  modality: Text
-  task: Summarization
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Biomedical
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: FacetSum
-  release_year: 2021
-  modality: Text
-  task: Summarization
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 60k full-text papers
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: CS-PaperSum
-  release_year: 2025
-  modality: Text
-  task: Summarization
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Computer Science
-  size: 91.9k full-text papers
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  code_url: https://github.com/allenai/scitldr
+  # :contentReference[oaicite:24]{index=24}
+
 - name: Multi-XScience
-  release_year: 2020
-  modality: Text
-  task: Summarization
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: 30k instances
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: MS²
-  release_year: 2021
-  modality: Text
-  task: Summarization
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: Biomedical
-  size: 20k reviews
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: BigSurvey
-  release_year: 2022
-  modality: Text
-  task: Summarization
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: 7k full-text surveys
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SURVEYSUM
-  release_year: 2024
-  modality: Text
-  task: Summarization
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 79 sections
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: LEGOBench
-  release_year: 2023
-  modality: Text
-  task: Summarization
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Scientific
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciCap+
-  release_year: 2024
-  modality: Image&Text
-  task: Captioning
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Scientific
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: MMSci
-  release_year: 2023
-  modality: Image&Text
-  task: Captioning
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Scientific
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ArXivCap
-  release_year: 2024
-  modality: Image&Text
-  task: Captioning
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Scientific
-  size: 6.4M images & 3.9M captions
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ACL-FIG
-  release_year: 2023
-  modality: Image
-  task: Classification
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 112k figures
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: LitSearch
-  release_year: 2024
-  modality: Text
-  task: Retrieval
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 597 queries
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciMMIR
-  release_year: 2024
-  modality: Image&Text
-  task: Retrieval
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual&Auto
-  domain: Scientific
-  size: 530k image-text pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ARQMath
-  release_year: 2020
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Math
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciTSR
-  release_year: 2019
-  modality: Table&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: PubTabNet
-  release_year: 2020
-  modality: Table&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: TableVQA-Bench
-  release_year: 2024
-  modality: Table&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: DocVQA
-  release_year: 2021
-  modality: Image&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: PlotQA
-  release_year: 2020
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual&Auto
-  domain: '-'
-  size: 224k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ChartQA
-  release_year: 2022
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual&Auto
-  domain: '-'
-  size: 33k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: OpenCQA
-  release_year: 2022
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciGraphQA
-  release_year: 2023
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: 295k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: CharXiv
-  release_year: null
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: '-'
-  size: 2.3k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ChartLlama
-  release_year: 2023
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SimChart9K
-  release_year: 2023
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: 9k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ReachQA
-  release_year: 2024
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ECD
-  release_year: 2025
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ChartBench
-  release_year: 2023
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Auto
-  domain: '-'
-  size: 66.6k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ChartX
-  release_year: 2024
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: MMC
-  release_year: 2023
-  modality: Chart&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: BioRead
-  release_year: 2018
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual&Auto
-  domain: Biomedical
-  size: 10k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  task: Summarization (multi-doc)
+  code_url: https://github.com/yaolu/Multi-XScience
+  paper_url: https://yaolu.github.io/upload/multixscience/Multi_XScience_Appendix.pdf
+  # :contentReference[oaicite:25]{index=25}
+
+- name: MS^2
+  task: Summarization (multi-doc, biomedical)
+  paper_url: https://arxiv.org/abs/2104.06486
+  code_url: https://github.com/allenai/ms2
+  # :contentReference[oaicite:26]{index=26}
+
 - name: PubMedQA
-  release_year: 2019
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual&Auto
-  domain: Biomedical
-  size: 273k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  task: QA (biomedical)
+  homepage_url: https://pubmedqa.github.io/
+  code_url: https://github.com/pubmedqa/pubmedqa
+  # :contentReference[oaicite:27]{index=27}
+
 - name: BioMRC
-  release_year: 2020
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Biomedical
-  size: 1M QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ScholarlyRead
-  release_year: 2020
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 10k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ChemLLMBench
-  release_year: 2023
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: Chemistry
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ScholarChemQA
-  release_year: 2025
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual&Auto
-  domain: Chemistry
-  size: 40k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: QASPER
-  release_year: 2021
-  modality: Text
-  task: QA
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: NLP
-  size: 5k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: QASA
-  release_year: 2023
-  modality: Text
-  task: QA
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 1.8k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: LitQA
-  release_year: 2023
-  modality: Text
-  task: QA
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: Biology
-  size: 50 QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SCIBENCH
-  release_year: null
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: '-'
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciEval
-  release_year: 2024
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: '-'
-  size: 18k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ScholarQABench
-  release_year: 2024
-  modality: Text
-  task: QA
-  is_multi_doc: true
-  is_only_eval: true
-  label_method: Manual
-  domain: '-'
-  size: 2.9k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SCIDQA
-  release_year: 2024
-  modality: Text
-  task: QA
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 2.9k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciQAG-24D
-  release_year: 2024
-  modality: Text
-  task: QA
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Auto
-  domain: '-'
-  size: 188k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: Xiezhi
-  release_year: 2024
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: '-'
-  size: 249k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciKnowEval
-  release_year: 2024
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: '-'
-  size: 70k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: PeerQA
-  release_year: 2025
-  modality: Text
-  task: QA
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 579 QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: COVID-QA
-  release_year: 2020
-  modality: Text
-  task: QA
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: COVID-19
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: BioASQ-TaskB
-  release_year: 2013-2025
-  modality: Text
-  task: QA
-  is_multi_doc: true
-  is_only_eval: false
-  label_method: Manual
-  domain: Biomedical
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciFIBench
-  release_year: 2024
-  modality: Image&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: Scientific
-  size: 2k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SCI-CQA
-  release_year: 2024
-  modality: Image&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Scientific
-  size: 10k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: ArXivQA
-  release_year: 2024
-  modality: Image&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Scientific
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: LLM4Mat-Bench
-  release_year: 2024
-  modality: Image&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Auto
-  domain: Materials Science
-  size: 1.97M samples
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SPIQA
-  release_year: 2024
-  modality: Image&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: Scientific
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciAssess
-  release_year: 2024
-  modality: Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: true
-  label_method: Manual
-  domain: Scientific
-  size: 6,888 QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: MMMU
-  release_year: 2023
-  modality: Image&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: '-'
-  size: 11.5k QA pairs
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: LAB-Bench
-  release_year: 2024
-  modality: Image&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Biology
-  size: 2.4k
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: MMCR
-  release_year: 2025
-  modality: Image&Text
-  task: QA
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual&Auto
-  domain: Scientific
-  size: 310k
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: arXiv
-  release_year: 1991
-  modality: Text
-  task: Pretraining
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Multi-domain
-  size: 2.6M full-text papers
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: S2ORC
-  release_year: 2020
-  modality: Text
-  task: Pretraining
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Multi-domain
-  size: 81M full-text papers
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: PubMed Central
-  release_year: 2000
-  modality: Text
-  task: Pretraining
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Biomedical
-  size: 10M full-text papers
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: PubMed
-  release_year: 1966
-  modality: Text
-  task: Pretraining
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Biomedical
-  size: 35M paper metadata
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: CSL
-  release_year: 2022
-  modality: Text
-  task: Pretraining
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Chinese
-  size: 396k paper metadata
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: The Pile
-  release_year: 2020
-  modality: Text
-  task: Pretraining
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Multi-domain
-  size: 800GB raw text
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: RedPajama
-  release_year: 2024
-  modality: Text
-  task: Pretraining
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: General
-  size: '-'
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: Dolma
-  release_year: 2024
-  modality: Text
-  task: Pretraining
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: General
-  size: 3T tokens
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: CORD-19
-  release_year: 2020
-  modality: Text
-  task: Pretraining
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: COVID-19
-  size: 1M full-text papers
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciInstruct
-  release_year: 2024
-  modality: Text
-  task: Multi-Task Instruction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Scientific
-  size: 100k examples
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SciRIFF
-  release_year: null
-  modality: Text
-  task: Multi-Task Instruction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Scientific
-  size: 3.1k abstracts
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: SMoIlnstruct
-  release_year: null
-  modality: Text
-  task: Multi-Task Instruction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Auto
-  domain: Molecular
-  size: 340k instructions
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: HoneyBee
-  release_year: 2023
-  modality: Text
-  task: Multi-Task Instruction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual&Auto
-  domain: Materials Science
-  size: 52k instructions
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
-- name: IDL
-  release_year: null
-  modality: Text
-  task: Multi-Task Instruction
-  is_multi_doc: false
-  is_only_eval: false
-  label_method: Manual
-  domain: Industry
-  size: 15M documents
-  url:
-    primary: null
-    paper: null
-    home: null
-  notes: null
+  task: QA / MRC (biomedical)
+  paper_url: https://arxiv.org/abs/2005.06376
+  # :contentReference[oaicite:28]{index=28}
+
+- name: LitSearch
+  task: Retrieval benchmark
+  paper_url: https://aclanthology.org/2024.emnlp-main.840.pdf
+  code_url: https://github.com/princeton-nlp/LitSearch
+  homepage_url: https://huggingface.co/datasets/princeton-nlp/LitSearch
+  # :contentReference[oaicite:29]{index=29}
+
+- name: SciMMIR
+  task: Image&Text Retrieval (scientific)
+  paper_url: https://aclanthology.org/2024.findings-acl.746.pdf
+  code_url: https://github.com/Wusiwei0410/SciMMIR
+  homepage_url: https://arxiv.org/html/2401.13478v1
+  # :contentReference[oaicite:30]{index=30}

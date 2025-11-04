@@ -45,3 +45,46 @@
 
 ## 贡献指南
 见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
+
+<!-- DATASETS_TABLE_START -->
+## Datasets (Task + Links)
+
+> 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。
+> 说明：当前已隐藏 **Multi-Task Instruction, Pretraining** 类别（仍保留在 YAML 中）。
+
+| Dataset | Task | Paper | GitHub |
+| --- | --- | --- | --- |
+| PubLayNet | Layout&OCR | — | — |
+| DocBank | Layout&OCR&Formula Recognition | — | — |
+| DocLayNet | Layout&OCR | — | — |
+| OmniDocBench | Layout&OCR | — | — |
+| M6Doc | Layout&OCR | — | — |
+| IBEM | Layout&OCR (Formula detection) | — | — |
+| TabLeX | Table Recognition | — | — |
+| ICDAR 2021 DocVQA | Document VQA | — | — |
+| PRImA Layout Analysis | Layout&OCR | — | — |
+| Nougat | Layout&OCR&Table/Formula Recognition | — | — |
+| AceParse | Layout&OCR&Table/Formula Recognition | — | — |
+| TableBank | Table Recognition | — | — |
+| TabRecSet | Table Recognition (end-to-end) | — | — |
+| PubTables-1M | Table Recognition | — | — |
+| DECIMER.ai | Chemical Recognition | — | — |
+| CROHME | Formula Recognition (online HME) | — | — |
+| HME100K | Formula Recognition (offline HME) | — | — |
+| MathWriting | Formula Recognition (online/offline) | — | — |
+| PEaCE | Chemical OCR | — | — |
+| DocVQA (WACV 2021 dataset) | Document VQA | — | — |
+| GENIA | IE | — | — |
+| BC5CDR | IE (Chem/Disease, relations) | — | — |
+| NCBI Disease | IE (Disease) | — | — |
+| CHEMDNER | IE (Chemical NER) | — | — |
+| BioRED | IE (Doc-level RE) | — | — |
+| SCITLDR | Summarization | — | — |
+| Multi-XScience | Summarization (multi-doc) | — | — |
+| MS^2 | Summarization (multi-doc, biomedical) | — | — |
+| PubMedQA | QA (biomedical) | — | — |
+| BioMRC | QA / MRC (biomedical) | — | — |
+| LitSearch | Retrieval benchmark | — | — |
+| SciMMIR | Image&Text Retrieval (scientific) | — | — |
+<!-- DATASETS_TABLE_END -->
+
