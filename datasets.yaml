@@ -153,3 +153,158 @@
   url:
     paper: https://aclanthology.org/2024.findings-acl.746.pdf
     primary: https://github.com/Wusiwei0410/SciMMIR
+- name: PubLayNet
+  task: Layout&OCR
+  notes: Derived from PubMed Central PDFs.
+  url:
+    paper: https://arxiv.org/abs/1908.07836
+    primary: https://ar5iv.labs.arxiv.org/html/1908.07836
+- name: DocBank
+  task: Layout&OCR&Formula Recognition
+  url:
+    paper: https://doc-analysis.github.io/docbank-page/
+    primary: https://github.com/doc-analysis/DocBank
+- name: DocLayNet
+  task: Layout&OCR
+  url:
+    paper: https://arxiv.org/abs/2210.06155
+    primary: https://github.com/DS4SD/DocLayNet
+- name: OmniDocBench
+  task: Layout&OCR
+  url:
+    paper: https://openaccess.thecvf.com/content/CVPR2025/papers/Ouyang_OmniDocBench_Benchmarking_Diverse_PDF_Document_Parsing_with_Comprehensive_Annotations_CVPR_2025_paper.pdf
+    primary: https://github.com/opendatalab/OmniDocBench
+- name: M6Doc
+  task: Layout&OCR
+  url:
+    paper: https://arxiv.org/abs/2305.08719
+    primary: https://github.com/HCIILAB/M6Doc
+- name: IBEM
+  task: Layout&OCR (Formula detection)
+  url:
+    paper: https://dl.acm.org/doi/10.1016/j.patrec.2023.05.033
+    home: https://zenodo.org/records/4757865
+- name: TabLeX
+  task: Table Recognition
+  url:
+    paper: https://arxiv.org/abs/2105.06400
+    home: https://opendatalab.com/OpenDataLab/TabLeX/download
+- name: ICDAR 2021 DocVQA
+  task: Document VQA
+  url:
+    paper: https://arxiv.org/abs/2111.05547
+    home: https://iapr.org/archives/icdar2021/index.html?p=29526.html
+- name: PRImA Layout Analysis
+  task: Layout&OCR
+  url:
+    home: https://www.primaresearch.org/datasets/Layout_Analysis
+- name: Nougat
+  task: Layout&OCR&Table/Formula Recognition
+  url:
+    paper: https://facebookresearch.github.io/nougat/
+    primary: https://github.com/facebookresearch/nougat
+- name: AceParse
+  task: Layout&OCR&Table/Formula Recognition
+  url:
+    paper: https://arxiv.org/abs/2402.18903
+    home: https://github.com/AlibabaPAI/aceparse
+- name: TableBank
+  task: Table Recognition
+  url:
+    paper: https://aclanthology.org/2020.lrec-1.236/
+    primary: https://github.com/doc-analysis/TableBank
+- name: TabRecSet
+  task: Table Recognition (end-to-end)
+  url:
+    paper: https://www.researchgate.net/publication/368754251
+    primary: https://github.com/MaxKinny/TabRecSet
+- name: PubTables-1M
+  task: Table Recognition
+  url:
+    paper: https://openaccess.thecvf.com/content/CVPR2022/html/Smock_PubTables-1M_Towards_Comprehensive_Table_Extraction_From_Unstructured_Documents_CVPR_2022_paper.html
+    primary: https://github.com/microsoft/table-transformer
+- name: DECIMER.ai
+  task: Chemical Recognition
+  url:
+    paper: https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00505-8
+    primary: https://github.com/Kohulan/DECIMER-Image_Transformer
+- name: CROHME
+  task: Formula Recognition (online HME)
+  data_url: https://www.isical.ac.in/~crohme/CROHME_data.html
+  url:
+    home: https://www.isical.ac.in/~crohme/
+- name: HME100K
+  task: Formula Recognition (offline HME)
+  url:
+    paper: https://arxiv.org/pdf/2203.01601
+    primary: https://github.com/Phymond/HME100K
+- name: MathWriting
+  task: Formula Recognition (online/offline)
+  data_url: https://storage.googleapis.com/mathwriting_data/mathwriting-2024.tgz
+  url:
+    paper: https://arxiv.org/abs/2404.10690
+    primary: https://github.com/google-research/google-research/tree/master/mathwriting
+- name: PEaCE
+  task: Chemical OCR
+  url:
+    paper: https://aclanthology.org/2024.lrec-main.1110.pdf
+    primary: https://github.com/ZN1010/PEaCE
+- name: DocVQA (WACV 2021 dataset)
+  task: Document VQA
+  url:
+    paper: https://openaccess.thecvf.com/content/WACV2021/papers/Mathew_DocVQA_A_Dataset_for_VQA_on_Document_Images_WACV_2021_paper.pdf
+- name: GENIA
+  task: IE
+  url:
+    home: https://www.geniaproject.org/genia-corpus
+- name: BC5CDR
+  task: IE (Chem/Disease, relations)
+  url:
+    paper: https://biocreative.bioinformatics.udel.edu/media/store/files/2016/CDR_Task.pdf
+    primary: https://github.com/JHnlp/BioCreative-V-CDR-Corpus
+- name: NCBI Disease
+  task: IE (Disease)
+  url:
+    home: https://www.ncbi.nlm.nih.gov/research/bionlp/Data/disease/
+- name: CHEMDNER
+  task: IE (Chemical NER)
+  url:
+    paper: https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S2
+    home: https://huggingface.co/datasets/bigbio/chemdner
+- name: BioRED
+  task: IE (Doc-level RE)
+  url:
+    paper: https://academic.oup.com/bib/article/23/5/bbac282/6645993
+    home: https://pubmed.ncbi.nlm.nih.gov/35849818/
+- name: SCITLDR
+  task: Summarization
+  url:
+    primary: https://github.com/allenai/scitldr
+- name: Multi-XScience
+  task: Summarization (multi-doc)
+  url:
+    paper: https://yaolu.github.io/upload/multixscience/Multi_XScience_Appendix.pdf
+    primary: https://github.com/yaolu/Multi-XScience
+- name: MS^2
+  task: Summarization (multi-doc, biomedical)
+  url:
+    paper: https://arxiv.org/abs/2104.06486
+    primary: https://github.com/allenai/ms2
+- name: PubMedQA
+  task: QA (biomedical)
+  url:
+    primary: https://github.com/pubmedqa/pubmedqa
+- name: BioMRC
+  task: QA / MRC (biomedical)
+  url:
+    paper: https://arxiv.org/abs/2005.06376
+- name: LitSearch
+  task: Retrieval benchmark
+  url:
+    paper: https://aclanthology.org/2024.emnlp-main.840.pdf
+    primary: https://github.com/princeton-nlp/LitSearch
+- name: SciMMIR
+  task: Image&Text Retrieval (scientific)
+  url:
+    paper: https://aclanthology.org/2024.findings-acl.746.pdf
+    primary: https://github.com/Wusiwei0410/SciMMIR
