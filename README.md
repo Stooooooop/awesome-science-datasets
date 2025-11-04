@@ -3,7 +3,7 @@
 > 面向科技文献的公开数据集列表。  
 > 欢迎 PR 补充与修正（见下方贡献指南）。
 
-[![Link Check](https://img.shields.io/github/actions/workflow/status/<yourname>/awesome-science-datasets/link-check.yml?branch=main)](./.github/workflows/link-check.yml)
+[![Link Check](https://img.shields.io/github/actions/workflow/status/Stooooooop/awesome-science-datasets/link-check.yml?branch=main)](./.github/workflows/link-check.yml)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 ## 目录
@@ -13,25 +13,21 @@
 - [快速浏览（按类别）](#快速浏览按类别)
   - [Summarization](#summarization)
 - [贡献指南](#贡献指南)
+- [Datasets (Task + Links)](#datasets-task--links)
 
 ## 使用方法
 - 所有条目的“权威地址（primary）”指向项目官方 GitHub 或主页；若有论文与镜像地址一并给出。
 - 结构化索引见 `datasets.yaml`（或 `datasets.json`），便于二次开发与程序化检索。
 
-<!-- ## Datasets (Task + Links)
-
-> 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。
-
-| Dataset | Task | Paper | GitHub |
-| --- | --- | --- | --- |
-| WikiHow | summarization | [paper](https://arxiv.org/abs/1810.09305) | [github](https://github.com/mahnazkoupaee/WikiHow-Dataset) |
-| arXiv/PubMed | summarization | [paper](https://aclanthology.org/N18-2097/) | — |
-| SciSummNet | summarization | [paper](https://aclanthology.org/W19-8660/) | [github](https://github.com/WING-NUS/scisumm-corpus) | -->
 
 
 ## 数据清单（结构化索引）
-- 统一字段：`name / task / domain / modality / url.primary / url.paper / url.home / license / size / notes`
-- 完整示例：见 [`datasets.yaml`](./datasets.yaml)
+> 结构化索引见 `datasets.yaml`；思维导图如下：
+
+<p align="center">
+  <img src="./assets/datasets_tree.svg" width="95%" alt="Mind map of datasets for scientific literature understanding" />
+</p>
+
 
 ## 快速浏览（按类别）
 >可在 `categories/` 下维护专题页。

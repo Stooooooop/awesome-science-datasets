@@ -6,3 +6,15 @@ Thumbs.db
 __pycache__
 .venv
 .env
+
+# TikZ/LaTeX build intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.gz
+*.nav
+*.snm
+*.fls
+*.fdb_latexmk
+fig/*.pdf
