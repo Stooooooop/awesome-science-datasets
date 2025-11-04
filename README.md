@@ -1,14 +1,15 @@
-# Awesome Science Datasets & Benchmarks <!-- omit in toc -->
+# Datasets for Scientific Literature Understanding and Reasoning: A Survey <!-- omit in toc -->
 
-> 面向科技文献的公开数据集列表。  
+> 面向科技文献的公开数据集综述。  
 > 欢迎 PR 补充与修正（见下方贡献指南）。
 
-[![Link Check](https://img.shields.io/github/actions/workflow/status/Stooooooop/awesome-science-datasets/link-check.yml?branch=main)](./.github/workflows/link-check.yml)
+<!-- [![Link Check](https://img.shields.io/github/actions/workflow/status/Stooooooop/awesome-science-datasets/link-check.yml?branch=main)](./.github/workflows/link-check.yml) -->
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 ## 目录
 - [目录](#目录)
 - [使用方法](#使用方法)
+- [项目介绍](#项目介绍)
 - [数据清单（结构化索引）](#数据清单结构化索引)
 - [贡献指南](#贡献指南)
 - [Datasets (Task + Links)](#datasets-task--links)
@@ -16,6 +17,10 @@
 ## 使用方法
 - 所有条目的“权威地址（primary）”指向项目官方 GitHub 或主页；若有论文与镜像地址一并给出。
 - 结构化索引见 `datasets.yaml`（或 `datasets.json`），便于二次开发与程序化检索。
+
+## 项目介绍
+
+本项目聚焦“科技文献理解与推理”数据集综述。面对文献激增与复杂推理需求，我们按四类系统梳理：光学层面理解、文本理解与推理、多模态理解与推理、预训练与对齐语料；概述各类数据集的动机、设计要点、组织方式与影响。结合大语言模型与多模态技术的迅速发展，呈现数据集演进脉络，帮助研究者高效选用资源，支撑 AI4S 中的自动理解、知识整合与创新研究。
 
 
 ## 数据清单（结构化索引）
