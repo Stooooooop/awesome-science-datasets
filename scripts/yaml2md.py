@@ -61,7 +61,7 @@ def main():
     data = yaml.safe_load(yml.read_text(encoding="utf-8"))
 
     snippet = f"""{MARK_START}
-## Datasets (Task + Links)
+##  数据集 (Task + Links)
 
 > 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。
 > 说明：当前已隐藏 **{', '.join(sorted(EXCLUDE_TASKS))}** 类别（仍保留在 YAML 中）。
