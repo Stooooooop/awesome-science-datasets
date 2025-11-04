@@ -1,0 +1,198 @@
+- name: PubLayNet
+  task: Layout&OCR
+  paper_url: https://arxiv.org/abs/1908.07836
+  code_url: https://ar5iv.labs.arxiv.org/html/1908.07836
+  homepage_url: https://github.com/ibm-aur-nlp/PubLayNet
+  note: Derived from PubMed Central PDFs.
+  # :contentReference[oaicite:0]{index=0}
+
+- name: DocBank
+  task: Layout&OCR&Formula Recognition
+  paper_url: https://doc-analysis.github.io/docbank-page/
+  code_url: https://github.com/doc-analysis/DocBank
+  homepage_url: https://doc-analysis.github.io/docbank-page/
+  # :contentReference[oaicite:1]{index=1}
+
+- name: DocLayNet
+  task: Layout&OCR
+  paper_url: https://arxiv.org/abs/2210.06155
+  code_url: https://github.com/DS4SD/DocLayNet
+  homepage_url: https://huggingface.co/datasets/ds4sd/DocLayNet
+  # :contentReference[oaicite:2]{index=2}
+
+- name: OmniDocBench
+  task: Layout&OCR
+  paper_url: https://openaccess.thecvf.com/content/CVPR2025/papers/Ouyang_OmniDocBench_Benchmarking_Diverse_PDF_Document_Parsing_with_Comprehensive_Annotations_CVPR_2025_paper.pdf
+  code_url: https://github.com/opendatalab/OmniDocBench
+  homepage_url: https://huggingface.co/datasets/opendatalab/OmniDocBench
+  # :contentReference[oaicite:3]{index=3}
+
+- name: M6Doc
+  task: Layout&OCR
+  paper_url: https://arxiv.org/abs/2305.08719
+  code_url: https://github.com/HCIILAB/M6Doc
+  homepage_url: https://openaccess.thecvf.com/content/CVPR2023/papers/Cheng_M6Doc_A_Large-Scale_Multi-Format_Multi-Type_Multi-Layout_Multi-Language_Multi-Annotation_Category_Dataset_CVPR_2023_paper.pdf
+  # :contentReference[oaicite:4]{index=4}
+
+- name: IBEM
+  task: Layout&OCR (Formula detection)
+  paper_url: https://dl.acm.org/doi/10.1016/j.patrec.2023.05.033
+  homepage_url: https://zenodo.org/records/4757865
+  # :contentReference[oaicite:5]{index=5}
+
+- name: TabLeX
+  task: Table Recognition
+  paper_url: https://arxiv.org/abs/2105.06400
+  homepage_url: https://opendatalab.com/OpenDataLab/TabLeX/download
+  # :contentReference[oaicite:6]{index=6}
+
+- name: ICDAR 2021 DocVQA
+  task: Document VQA
+  paper_url: https://arxiv.org/abs/2111.05547
+  homepage_url: https://iapr.org/archives/icdar2021/index.html?p=29526.html
+  # :contentReference[oaicite:7]{index=7}
+
+- name: PRImA Layout Analysis
+  task: Layout&OCR
+  homepage_url: https://www.primaresearch.org/datasets/Layout_Analysis
+  # :contentReference[oaicite:8]{index=8}
+
+- name: Nougat
+  task: Layout&OCR&Table/Formula Recognition
+  paper_url: https://facebookresearch.github.io/nougat/
+  code_url: https://github.com/facebookresearch/nougat
+  # :contentReference[oaicite:9]{index=9}
+
+- name: AceParse
+  task: Layout&OCR&Table/Formula Recognition
+  paper_url: https://arxiv.org/abs/2402.18903
+  homepage_url: https://github.com/AlibabaPAI/aceparse
+  # （若与你表中年份不一致可先保留占位，稍后我可统一核对）
+
+- name: TableBank
+  task: Table Recognition
+  paper_url: https://aclanthology.org/2020.lrec-1.236/
+  code_url: https://github.com/doc-analysis/TableBank
+  homepage_url: https://doc-analysis.github.io/tablebank-page/
+  # :contentReference[oaicite:10]{index=10}
+
+- name: TabRecSet
+  task: Table Recognition (end-to-end)
+  paper_url: https://www.researchgate.net/publication/368754251
+  code_url: https://github.com/MaxKinny/TabRecSet
+  # :contentReference[oaicite:11]{index=11}
+
+- name: PubTables-1M
+  task: Table Recognition
+  paper_url: https://openaccess.thecvf.com/content/CVPR2022/html/Smock_PubTables-1M_Towards_Comprehensive_Table_Extraction_From_Unstructured_Documents_CVPR_2022_paper.html
+  code_url: https://github.com/microsoft/table-transformer
+  # :contentReference[oaicite:12]{index=12}
+
+- name: DECIMER.ai
+  task: Chemical Recognition
+  paper_url: https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00505-8
+  code_url: https://github.com/Kohulan/DECIMER-Image_Transformer
+  homepage_url: https://github.com/OBrink/DECIMER.ai
+  # :contentReference[oaicite:13]{index=13}
+
+- name: CROHME
+  task: Formula Recognition (online HME)
+  homepage_url: https://www.isical.ac.in/~crohme/
+  data_url: https://www.isical.ac.in/~crohme/CROHME_data.html
+  # :contentReference[oaicite:14]{index=14}
+
+- name: HME100K
+  task: Formula Recognition (offline HME)
+  paper_url: https://arxiv.org/pdf/2203.01601
+  code_url: https://github.com/Phymond/HME100K
+  # :contentReference[oaicite:15]{index=15}
+
+- name: MathWriting
+  task: Formula Recognition (online/offline)
+  paper_url: https://arxiv.org/abs/2404.10690
+  code_url: https://github.com/google-research/google-research/tree/master/mathwriting
+  data_url: https://storage.googleapis.com/mathwriting_data/mathwriting-2024.tgz
+  # :contentReference[oaicite:16]{index=16}
+
+- name: PEaCE
+  task: Chemical OCR
+  paper_url: https://aclanthology.org/2024.lrec-main.1110.pdf
+  code_url: https://github.com/ZN1010/PEaCE
+  # :contentReference[oaicite:17]{index=17}
+
+- name: DocVQA (WACV 2021 dataset)
+  task: Document VQA
+  paper_url: https://openaccess.thecvf.com/content/WACV2021/papers/Mathew_DocVQA_A_Dataset_for_VQA_on_Document_Images_WACV_2021_paper.pdf
+  # :contentReference[oaicite:18]{index=18}
+
+# —— 纯文本 / 生物医学 IE & QA & Summarization ——
+
+- name: GENIA
+  task: IE
+  homepage_url: https://www.geniaproject.org/genia-corpus
+  # :contentReference[oaicite:19]{index=19}
+
+- name: BC5CDR
+  task: IE (Chem/Disease, relations)
+  paper_url: https://biocreative.bioinformatics.udel.edu/media/store/files/2016/CDR_Task.pdf
+  code_url: https://github.com/JHnlp/BioCreative-V-CDR-Corpus
+  # :contentReference[oaicite:20]{index=20}
+
+- name: NCBI Disease
+  task: IE (Disease)
+  homepage_url: https://www.ncbi.nlm.nih.gov/research/bionlp/Data/disease/
+  # :contentReference[oaicite:21]{index=21}
+
+- name: CHEMDNER
+  task: IE (Chemical NER)
+  paper_url: https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-7-S1-S2
+  homepage_url: https://huggingface.co/datasets/bigbio/chemdner
+  # :contentReference[oaicite:22]{index=22}
+
+- name: BioRED
+  task: IE (Doc-level RE)
+  paper_url: https://academic.oup.com/bib/article/23/5/bbac282/6645993
+  homepage_url: https://pubmed.ncbi.nlm.nih.gov/35849818/
+  # :contentReference[oaicite:23]{index=23}
+
+- name: SCITLDR
+  task: Summarization
+  code_url: https://github.com/allenai/scitldr
+  # :contentReference[oaicite:24]{index=24}
+
+- name: Multi-XScience
+  task: Summarization (multi-doc)
+  code_url: https://github.com/yaolu/Multi-XScience
+  paper_url: https://yaolu.github.io/upload/multixscience/Multi_XScience_Appendix.pdf
+  # :contentReference[oaicite:25]{index=25}
+
+- name: MS^2
+  task: Summarization (multi-doc, biomedical)
+  paper_url: https://arxiv.org/abs/2104.06486
+  code_url: https://github.com/allenai/ms2
+  # :contentReference[oaicite:26]{index=26}
+
+- name: PubMedQA
+  task: QA (biomedical)
+  homepage_url: https://pubmedqa.github.io/
+  code_url: https://github.com/pubmedqa/pubmedqa
+  # :contentReference[oaicite:27]{index=27}
+
+- name: BioMRC
+  task: QA / MRC (biomedical)
+  paper_url: https://arxiv.org/abs/2005.06376
+  # :contentReference[oaicite:28]{index=28}
+
+- name: LitSearch
+  task: Retrieval benchmark
+  paper_url: https://aclanthology.org/2024.emnlp-main.840.pdf
+  code_url: https://github.com/princeton-nlp/LitSearch
+  homepage_url: https://huggingface.co/datasets/princeton-nlp/LitSearch
+  # :contentReference[oaicite:29]{index=29}
+
+- name: SciMMIR
+  task: Image&Text Retrieval (scientific)
+  paper_url: https://aclanthology.org/2024.findings-acl.746.pdf
+  code_url: https://github.com/Wusiwei0410/SciMMIR
+  homepage_url: https://arxiv.org/html/2401.13478v1
+  # :contentReference[oaicite:30]{index=30}
