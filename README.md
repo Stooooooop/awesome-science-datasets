@@ -50,3 +50,16 @@
 
 ## 贡献指南
 见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
+
+<!-- DATASETS_TABLE_START -->
+## Datasets (Task + Links)
+
+> 下表仅展示 **Task、Paper、GitHub** 三列；其余字段维护在 `datasets.yaml`。
+
+| Dataset | Task | Paper | GitHub |
+| --- | --- | --- | --- |
+| WikiHow | summarization | [paper](https://arxiv.org/abs/1810.09305) | [github](https://github.com/mahnazkoupaee/WikiHow-Dataset) |
+| arXiv/PubMed | summarization | [paper](https://aclanthology.org/N18-2097/) | — |
+| SciSummNet | summarization | [paper](https://aclanthology.org/W19-8660/) | [github](https://github.com/WING-NUS/scisumm-corpus) |
+<!-- DATASETS_TABLE_END -->
+
